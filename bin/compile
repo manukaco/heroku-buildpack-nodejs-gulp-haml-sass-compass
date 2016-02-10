@@ -108,6 +108,7 @@ fi
 #if bower json present then bower install
 cd $build_dir
 if [[ -f ./bower.json ]]; then
+	status "Installing Bower dependencies"
 	npm install -g bower && bower install --allow-root
 fi
 
